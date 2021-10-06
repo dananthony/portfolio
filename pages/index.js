@@ -31,6 +31,11 @@ export default function Home() {
         <title>Dan Anthony</title>
         <meta name="description" content="Web designer and front-end web developer" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Home"/>
+        <meta property="og:description" content="Web designer and front-end web developer"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://dan-anthony.dev"/>
+        <meta property="og:image" content="https://dan-anthony.dev/images/cover.jpg"/>
       </Head>
 
       <main className={styles.main}>
