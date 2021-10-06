@@ -35,7 +35,7 @@ export default function Home() {
         <meta property="og:description" content="Web designer and front-end web developer"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://dan-anthony.dev"/>
-        <meta property="og:image" content="https://dan-anthony.dev/images/cover.jpg"/>
+        <meta property="og:image" content="https://dan-anthony.dev/images/mondonero.jpeg"/>
       </Head>
 
       <main className={styles.main}>
