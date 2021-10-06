@@ -1,6 +1,11 @@
 .container {
   min-height: 100vh;
   padding: 4rem 2rem;
+  max-width: 768px;
+
+  @media (min-width: 1200px) {
+    padding: 8rem 4rem;
+  }
 }
 
 .title {
@@ -26,6 +31,8 @@
   }
   .card {
     border-bottom: 1px dotted #000;
+    margin-bottom: 2rem;
+
     img {
       margin-bottom: 1rem !important;
     }

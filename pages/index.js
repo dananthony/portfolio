@@ -1,22 +1,33 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import content from '../content/projects.json'
 
 
 const Project = ({ title, designer }) => (
   <div className={styles.card}>
-    <Image
-      src="/images/mondonero.jpeg"
+    {/* <Image
+      src={`/images/mondonero.jpeg`}
       height={188}
       width={335}
-      alt="Mondonero"
-    />
-    <h3 className={styles.title}>{title} w/ <a href="https:google.com" target="_blank" rel="noopener noreferrer">{designer}</a></h3>
-    <p className={styles.meta}><span>React</span><span>Gatsby</span><span>Sanity</span></p>
+      alt={title}
+    /> */}
+    <h3 className={styles.title}>{title} {designer && (
+      <>
+        w/ {''}
+        <a href={designer.url} target="_blank" rel="noopener noreferrer">{designer.name}</a>
+      </>
+    )}</h3>
+    <p className={styles.meta}>
+      <span>React</span>
+      <span>Gatsby</span>
+      <span>Sanity</span>
+    </p>
   </div>
 )
 
 export default function Home() {
+  console.log(content);
   return (
     <div className={styles.container}>
       <Head>
@@ -31,7 +42,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          <span>I&apos;m a Front-End developer and the Director/Founder of <a href="https://paperfox.com.au"
+          <span>I&apos;m a Front-End developer and the Director/Founder at <a href="https://paperfox.com.au"
           target="_blank"
           rel="noopener noreferrer">Paperfox</a>.</span>
           <span>I design & build websites and web apps using HTML, CSS and JavaScript and I&apos;m currently focused on React.js, Gatsby and Next.js.</span>
@@ -40,7 +51,9 @@ export default function Home() {
         <div className={styles.grid}>
           <h2 className={styles.title}>Selected Projects</h2>
           <hr />
-          <Project title="Mondonero" designer="Claudia Pastori" />
+          {content.map((project, index) => (
+            <Project key={index} title={project.title} designer={project.designer} />
+          ))}
         </div>
       </main>
 
