@@ -4,25 +4,22 @@ import styles from '../styles/Home.module.scss'
 import content from '../content/projects.json'
 
 
-const Project = ({ title, designer }) => (
+const Project = ({ title, designer, tags, url }) => (
   <div className={styles.card}>
-    {/* <Image
-      src={`/images/mondonero.jpeg`}
-      height={188}
-      width={335}
-      alt={title}
-    /> */}
-    <h3 className={styles.title}>{title} {designer && (
-      <>
-        w/ {''}
-        <a href={designer.url} target="_blank" rel="noopener noreferrer">{designer.name}</a>
-      </>
-    )}</h3>
-    <p className={styles.meta}>
-      <span>React</span>
-      <span>Gatsby</span>
-      <span>Sanity</span>
-    </p>
+    <div>
+      <h3 className={styles.title}>{title} {designer && (
+        <>
+          w/ {''}
+          <a href={designer.url} target="_blank" rel="noopener noreferrer">{designer.name}</a>
+        </>
+      )}</h3>
+      <p className={styles.meta}>
+        {tags.map((tag, index) => (
+          <span key={index}>{tag}</span>
+        ))}
+      </p>
+    </div>
+    <a href={url} target="_blank" rel="noopener noreferrer" className={styles.link}>&rarr;</a>
   </div>
 )
 
@@ -52,7 +49,7 @@ export default function Home() {
           <h2 className={styles.title}>Selected Projects</h2>
           <hr />
           {content.map((project, index) => (
-            <Project key={index} title={project.title} designer={project.designer} />
+            <Project key={index} title={project.title} designer={project.designer} tags={project.tags} url={project.url}/>
           ))}
         </div>
       </main>

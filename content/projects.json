@@ -4,33 +4,45 @@
         "designer": {
             "name": "Claudia Pastori",
             "url": "https://www.behance.net/pastoriclaudia"
-        }
+        },
+        "tags": ["React", "Gatsby", "Sanity"],
+        "url": "https://mondonero.org"
     },
     {
-        "title": "x-RD"
+        "title": "x-RD",
+        "tags": ["React", "Gatsby", "Netlify CMS"],
+        "url": "https://www.x-rd.com.au/"
     },
     {
         "title": "Michele Sambin",
         "designer": {
             "name": "Riccardo Pirotto",
             "url": "http://www.riccardopirotto.com/"
-        }
+        },
+        "tags": ["React", "Gatsby", "Sanity"],
+        "url": "https://michelesambin.com/"
     },
     {
         "title": "ISU Space Lab",
         "designer": {
             "name": "Studio Laucke Siebein",
-            "url": "http://www.riccardopirotto.com/"
-        }
+            "url": "https://studio-laucke-siebein.com/"
+        },
+        "tags": ["HTML", "CSS"],
+        "url": "https://isuspacelab.org/"
     },
     {
-        "title": "iPopulate"
+        "title": "iPopulate",
+        "tags": ["React", "Gatsby", "Sanity"],
+        "url": "https://ipopulate.com.au/"
     },
     {
-        "title": "x-RD",
+        "title": "Nathan Ceddia",
         "designer": {
-            "name": "Nathan Ceddia",
+            "name": "Riccardo Pirotto",
             "url": "http://www.riccardopirotto.com/"
-        }
+        },
+        "tags": ["React", "Gatsby", "Sanity"],
+        "url": "https://nathanceddia.com/"
     }
 ]
