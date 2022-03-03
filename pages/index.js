@@ -44,10 +44,9 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          <span>I&apos;m a Front-End developer and the Director/Founder at <a href="https://paperfox.com.au"
+          <span>I build websites using HTML, CSS and Javascript, currently at <a href="https://acolorbright.com/en/
           target="_blank"
-          rel="noopener noreferrer">Paperfox</a>.</span>
-          <span>I design & build websites and web apps using HTML, CSS and JavaScript and I&apos;m currently focused on React.js, Gatsby and Next.js.</span>
+          rel="noopener noreferrer">A Color Bright</a>.</span>
         </p>
 
         <div className={styles.grid}>
